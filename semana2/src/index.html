@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/output.css" rel="stylesheet">
+    <title>Sabores del Mundo</title>
+  </head>
+  <body class="font-sans">
+    <div id="header"></div>
+      <main>
+        <section class="mt-2 mx-auto max-w-[95vw]">
+          <!-- Contenedor con altura FIJA (100px en todos los dispositivos) -->
+          <div class="overflow-hidden h-[100px] rounded-lg"> 
+            
+            <img
+              src="./assets/images/banner.jpg"
+              alt="Platos destacados"
+              class="w-full h-full object-cover"
+              style="object-position: 50% 20%;">
+          </div>
+        </section>
+        <!-- Sección Destacados -->
+        <section class="container mx-auto px-4 py-12">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800">RECETAS DESTACADAS EN
+              SABORES DEL MUNDO</h2>
+            <div class="w-20 h-1 bg-orange-500 mx-auto mt-4"></div>
+          </div>
+          <div class="px-4 py-8 max-w-2xl mx-auto">
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="Busca recetas, ingredientes..."
+                class="w-full p-4 pr-12 rounded-full border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-transparent">
+              <button class="absolute right-3 top-3.5 group">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 text-gray-400 group-hover:text-orange-500 group-hover:scale-110 transition-all duration-200"
+                  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <!-- Grid de recetas destacadas -->
+          <div class="grid md:grid-cols-3 gap-8">
+            <!-- Receta 1 -->
+            <article
+              class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+              <div class="overflow-hidden">
+                <img
+                  src="./assets/images/fabada.png"
+                  alt="Fabada asturiana"
+                  class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105">
+              </div>
+              <div class="p-6">
+                <h3 class="font-bold text-xl mb-2">Fabada asturiana</h3>
+                <p class="text-gray-600 mb-4">Legado culinario de Asturias</p>
+                <div class="flex justify-between items-center">
+                  <a href="#"
+                    class="bg-gray-700 hover:bg-teal-400 text-white px-5 py-2 rounded-full text-sm">
+                    Ver receta</a>
+                  <!-- Sistema de estrellas simple -->
+                  <div class="flex gap-1 text-2xl">
+                    <span
+                      class="star cursor-pointer text-gray-300 hover:text-teal-400"
+                      data-value="1">★</span>
+                    <span
+                      class="star cursor-pointer text-gray-300 hover:text-teal-400"
+                      data-value="2">★</span>
+                    <span
+                      class="star cursor-pointer text-gray-300 hover:text-teal-400"
+                      data-value="3">★</span>
+                    <span
+                      class="star cursor-pointer text-gray-300 hover:text-teal-400"
+                      data-value="4">★</span>
+                    <span
+                      class="star cursor-pointer text-gray-300 hover:text-teal-400"
+                      data-value="5">★</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!-- Receta 2 -->
+            <article
+              class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+              <div class="overflow-hidden">
+                <img
+                  src="./assets/images/pulpo.png"
+                  alt="Pulpo a feira"
+                  class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105">
+              </div>
+              <div class="p-6">
+                <h3 class="font-bold text-xl mb-2">Pulpo a feira</h3>
+                <p class="text-gray-600 mb-4">Tradición gallega con el mejor
+                  pulpo</p>
+                <div class="flex justify-between items-center">
+                  <a href="#"
+                    class="bg-gray-700 hover:bg-teal-400 text-white px-5 py-2 rounded-full text-sm">
+                    Ver receta
+                  </a>
+                  <div class="flex gap-1 text-2xl">
+                    <span
+                      class="star cursor-pointer text-gray-300 hover:text-teal-400"
+                      data-value="1">★</span>
+                    <span
+                      class="star cursor-pointer text-gray-300 hover:text-teal-400"
+                      data-value="2">★</span>
+                    <span
+                      class="star cursor-pointer text-gray-300 hover:text-teal-400"
+                      data-value="3">★</span>
+                    <span
+                      class="star cursor-pointer text-gray-300 hover:text-teal-400"
+                      data-value="4">★</span>
+                    <span
+                      class="star cursor-pointer text-gray-300 hover:text-teal-400"
+                      data-value="5">★</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article
+              class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+              <div class="overflow-hidden">
+                <img
+                  src="./assets/images/pitu.png"
+                  alt="Pitu caleya"
+                  class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105">
+              </div>
+              <div class="p-6">
+                <h3 class="font-bold text-xl mb-2">Pitu de caleya</h3>
+                <p class="text-gray-600 mb-4">Una de las mejores recetas de
+                  Asturias</p>
+                <div class="flex justify-between items-center">
+                  <a href="#"
+                    class="bg-gray-700 hover:bg-teal-400 text-white px-5 py-2 rounded-full text-sm">
+                    Ver receta
+                  </a>
+                  <div class="flex gap-1 text-2xl">
+                    <span
+                      class="star cursor-pointer text-gray-300 hover:text-teal-400"
+                      data-value="1">★</span>
+                    <span
+                      class="star cursor-pointer text-gray-300 hover:text-teal-400"
+                      data-value="2">★</span>
+                    <span
+                      class="star cursor-pointer text-gray-300 hover:text-teal-400"
+                      data-value="3">★</span>
+                    <span
+                      class="star cursor-pointer text-gray-300 hover:text-teal-400"
+                      data-value="4">★</span>
+                    <span
+                      class="star cursor-pointer text-gray-300 hover:text-teal-400"
+                      data-value="5">★</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </section>
+      <!-- Sección Categorías -->
+      <section class="container mx-auto px-4 py-12">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-800">CATEGORÍAS</h2>
+          <div class="w-20 h-1 bg-orange-500 mx-auto mt-4"></div>
+          <!-- Barra decorativa -->
+        </div>
+        <div class="px-4 py-8 max-w-2xl mx-auto">
+          <div class="relative">
+            <input
+              type="text"
+              placeholder="Busca recetas, ingredientes..."
+              class="w-full p-4 pr-12 rounded-full border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-transparent">
+            <button class="absolute right-3 top-3.5 group">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 text-gray-400 group-hover:text-orange-500 group-hover:scale-110 transition-all duration-200"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- Grid de categorías -->
+        <div class="grid md:grid-cols-3 gap-8">
+          <article
+            class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+            <div class="overflow-hidden">
+              <img
+                src="./assets/images/paella.png"
+                alt="Paella valenciana"
+                class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105">
+              <div class="p-6">
+                <h3 class="font-bold text-xl mb-2">ESPAÑA</h3>
+                <p class="text-gray-600 mb-4">LAS MEJORES RECETAS DE ESPAÑA</p>
+                <a href="#"
+                  class="inline-block bg-gray-700 hover:bg-teal-400 text-white px-5 py-2 rounded-full text-sm">
+                  Ver recetas
+                </a>
+              </div>
+            </article>
+            <article
+              class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+              <div class="overflow-hidden">
+                <img
+                  src="./assets/images/lasagna.png"
+                  alt="Lasaña"
+                  class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105">
+              </div>
+              <div class="p-6">
+                <h3 class="font-bold text-xl mb-2">ITALIA</h3>
+                <p class="text-gray-600 mb-4">LAS MEJORES RECETAS DE ITALIA</p>
+                <a href="#"
+                  class="inline-block bg-gray-700 hover:bg-teal-400 text-white px-5 py-2 rounded-full text-sm">
+                  Ver recetas
+                </a>
+              </div>
+            </article>
+            <article
+              class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+              <div class="overflow-hidden">
+                <img
+                  src="./assets/images/stifado.png"
+                  alt="Stifado"
+                  class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105">
+              </div>
+              <div class="p-6">
+                <h3 class="font-bold text-xl mb-2">GRECIA</h3>
+                <p class="text-gray-600 mb-4">LAS MEJORES RECETAS DE GRECIA</p>
+                <a href="#"
+                  class="inline-block bg-gray-700 hover:bg-teal-400 text-white px-5 py-2 rounded-full text-sm">
+                  Ver recetas
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- SECCIÓN CTA AÑADIR RECETA -->
+        <div class="bg-orange-50 py-12 text-center">
+          <div class="container mx-auto px-4">
+            <h3 class="text-2xl font-bold mb-4">¿Tienes una receta secreta?</h3>
+            <a href="/añadir-receta"
+              class="inline-block bg-black-500 hover:bg-teal-400 text-black px-6 py-3 rounded-full text-lg font-medium transition-colors">
+              Compártela con la comunidad
+            </a>
+          </div>
+        </div>
+        <!-- OPINIONES -->
+        <section class="container mx-auto px-4 py-12">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800">OPINIONES DE
+              USUARIOS</h2>
+            <div class="w-20 h-1 bg-orange-500 mx-auto mt-4"></div>
+          </div>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-xl shadow-md">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+                <div>
+                  <h4 class="font-bold">Ana L.</h4>
+                  <div class="flex text-amber-400">★★★★★</div>
+                </div>
+              </div>
+              <p
+                class="text-gray-600">"La primera vez que pruebo el pitu de caleya, una receta perfecta."</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+                <div>
+                  <h4 class="font-bold">Lorena z.</h4>
+                  <div class="flex text-amber-400">★★★★★</div>
+                </div>
+              </div>
+              <p
+                class="text-gray-600">"El pulpo a la gallega estaba espectacular, ¡justo como en mi viaje a Galicia!"</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-md">
+              <div class="flex items-center mb-4">
+                <div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+                <div>
+                  <h4 class="font-bold">Jorge G.</h4>
+                  <div class="flex text-amber-400">★★★★★</div>
+                </div>
+              </div>
+              <p
+                class="text-gray-600">"Increible la fabada, nada que envidiar a la de muchos restaurantes."</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <div id="footer"></div>
+    <script src="/src/js/load-components.js"></script>
+   
+  </body>
+</html>

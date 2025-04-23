@@ -1,0 +1,25 @@
+
+@import "tailwindcss";
+
+.hidden {
+  display: none !important;
+}
+
+/* Transición suave (opcional) */
+#mobile-menu {
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+#mobile-menu:not(.hidden) {
+  opacity: 1;
+}
+
+/* En tu archivo CSS personalizado */
+#mobile-menu.hidden {
+  display: none !important;
+}
+
+.lg\:flex {
+  display: flex !important; /* Fuerza la visibilidad en desktop */
+}

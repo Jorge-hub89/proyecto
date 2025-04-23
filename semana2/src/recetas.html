@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+
+        <link rel="stylesheet" href="./css/output.css">
+    </head>
+    <body class="flex flex-col min-h-screen">
+        <div id="header"></div>
+        
+        <main class="flex-grow">
+            <main class="flex-grow container mx-auto px-4 py-8 max-w-4xl">
+                <!-- Botón "Atrás" -->
+                <a href="index.html" class="inline-flex items-center text-teal-500 hover:text-teal-700 mb-6">
+                  <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+                  </svg>
+                  Volver a recetas
+                </a>
+            
+                <!-- Encabezado Receta -->
+                <div class="mb-8">
+                  <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">Fabada Asturiana</h1>
+                  <div class="flex items-center gap-4">
+                    <div class="flex text-amber-400 text-xl">★★★★☆</div>
+                    <span class="text-gray-500">⏱ 2h 30min</span>
+                  </div>
+                </div>
+            
+                <!-- Imagen Principal -->
+                <div class="rounded-xl overflow-hidden shadow-lg mb-8">
+                  <img src="./assets/images/fabada.png" alt="Fabada Asturiana" class="w-full h-64 md:h-96 object-cover hover:scale-105 transition-transform duration-300">
+                </div>
+            
+                <!-- Sección Ingredientes -->
+<section class="mb-12">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4 border-b pb-2">Ingredientes <span class="text-sm font-normal">(4 personas)</span></h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Grupo 1: Legumbres y carnes -->
+      <div>
+        <h3 class="font-semibold text-gray-700 mb-3 flex items-center">
+          <svg class="w-5 h-5 mr-2 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+          </svg>
+          Para la fabada
+        </h3>
+        <ul class="space-y-2 pl-2">
+          <li class="flex items-start">
+            <span class="mr-2 text-teal-500">•</span>
+            <span>500 g de <strong>alubias blancas</strong> (de Granja Asturiana)</span>
+          </li>
+          <li class="flex items-start">
+            <span class="mr-2 text-teal-500">•</span>
+            <span>2 <strong>morcillas</strong> asturianas</span>
+          </li>
+          <li class="flex items-start">
+            <span class="mr-2 text-teal-500">•</span>
+            <span>2 <strong>chorizos</strong> asturianos</span>
+          </li>
+          <li class="flex items-start">
+            <span class="mr-2 text-teal-500">•</span>
+            <span>250 g de <strong>tocino</strong> entreverado</span>
+          </li>
+          <li class="flex items-start">
+            <span class="mr-2 text-teal-500">•</span>
+            <span>1 <strong>lacón</strong> (opcional)</span>
+          </li>
+        </ul>
+      </div>
+  
+      <!-- Grupo 2: Aromáticos -->
+      <div>
+        <h3 class="font-semibold text-gray-700 mb-3 flex items-center">
+          <svg class="w-5 h-5 mr-2 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+          </svg>
+          Aromáticos
+        </h3>
+        <ul class="space-y-2 pl-2">
+          <li class="flex items-start">
+            <span class="mr-2 text-teal-500">•</span>
+            <span>1 <strong>cebolla</strong> grande</span>
+          </li>
+          <li class="flex items-start">
+            <span class="mr-2 text-teal-500">•</span>
+            <span>4 dientes de <strong>ajo</strong></span>
+          </li>
+          <li class="flex items-start">
+            <span class="mr-2 text-teal-500">•</span>
+            <span>1 <strong>pimiento verde</strong> italiano</span>
+          </li>
+          <li class="flex items-start">
+            <span class="mr-2 text-teal-500">•</span>
+            <span>2 hojas de <strong>laurel</strong></span>
+          </li>
+          <li class="flex items-start">
+            <span class="mr-2 text-teal-500">•</span>
+            <span><strong>Azafrán</strong> o colorante alimentario (opcional)</span>
+          </li>
+          <li class="flex items-start">
+            <span class="mr-2 text-teal-500">•</span>
+            <span><strong>Sal</strong> al gusto</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+                <!-- Sección Preparación -->
+<section class="mb-16">
+    <h2 class="text-2xl font-bold text-gray-800 mb-6 border-b pb-2 flex items-center">
+      <svg class="w-6 h-6 mr-2 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+      </svg>
+      Preparación
+    </h2>
+  
+    <!-- Paso 1 -->
+    <div class="flex flex-col md:flex-row gap-6 mb-8">
+      <div class="md:w-1/4 flex-shrink-0">
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-teal-500 text-white font-bold text-lg">1</span>
+      </div>
+      <div class="md:w-3/4">
+        <h3 class="text-xl font-semibold text-gray-800 mb-3">Remojo y primer hervor</h3>
+        <div class="prose prose-sm text-gray-600">
+          <p><strong>Tiempo:</strong> 12 horas (remojo) + 10 min (cocción)</p>
+          <ul class="list-disc pl-5 mt-2 space-y-1">
+            <li>Lava las alubias bajo el grifo y descarta las que floten.</li>
+            <li>En un recipiente grande, cúbrelas con agua fría (3 dedos por encima).</li>
+            <li>Añade 1 cucharadita de sal y deja remojar toda la noche.</li>
+          </ul>
+        </div>
+       
+      </div>
+    </div>
+  
+    <!-- Paso 2 -->
+    <div class="flex flex-col md:flex-row gap-6 mb-8">
+      <div class="md:w-1/4 flex-shrink-0">
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-teal-500 text-white font-bold text-lg">2</span>
+      </div>
+      <div class="md:w-3/4">
+        <h3 class="text-xl font-semibold text-gray-800 mb-3">Cocción lenta</h3>
+        <div class="prose prose-sm text-gray-600">
+          <p><strong>Tiempo:</strong> 2-3 horas</p>
+          <ul class="list-disc pl-5 mt-2 space-y-1">
+            <li>En una olla grande, pon las alubias escurridas con agua fría nueva.</li>
+            <li>Añade todos los ingredientes del compango (morcilla, chorizo, tocino).</li>
+            <li>Incorpora los aromáticos: cebolla entera pelada, ajos, pimiento y laurel.</li>
+            <li><strong>Fuego medio-bajo:</strong> Hierve lentamente sin remover, solo moviendo la olla ocasionalmente.</li>
+            <li>Retira la espuma que se forme en los primeros 15 minutos.</li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  
+    <!-- Paso 3 -->
+    <div class="flex flex-col md:flex-row gap-6 mb-8">
+      <div class="md:w-1/4 flex-shrink-0">
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-teal-500 text-white font-bold text-lg">3</span>
+      </div>
+      <div class="md:w-3/4">
+        <h3 class="text-xl font-semibold text-gray-800 mb-3">Reposo y presentación</h3>
+        <div class="prose prose-sm text-gray-600">
+          <p><strong>Tiempo:</strong> 15 min (reposo)</p>
+          <ul class="list-disc pl-5 mt-2 space-y-1">
+            <li>Cuando las alubias estén tiernas (prueba una), retira del fuego.</li>
+            <li>Saca los ingredientes del compango y corta en porciones.</li>
+            <li>Deja reposar la fabada 15 minutos antes de servir (espesará el caldo).</li>
+            <li>Sirve en cazuela de barro con el compango por encima.</li>
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+  
+  
+  </section>
+  <!-- Título -->
+<h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">Pulpo a Feira</h1>
+
+<!-- Rating y tiempo -->
+<div class="flex items-center gap-4 mb-6">
+  <div class="flex text-amber-400 text-xl">★★★★★</div>
+  <span class="text-gray-500">⏱ 1h 10min</span>
+</div>
+
+<!-- Imagen destacada -->
+<div class="rounded-xl overflow-hidden shadow-lg mb-8">
+  <img src="./assets/images/pulpo.png" alt="Pulpo a feira con pimentón y cachelos" 
+       class="w-full h-64 md:h-96 object-cover hover:scale-105 transition-transform duration-300">
+</div>
+
+<!-- SECCIÓN INGREDIENTES -->
+<section class="mb-12">
+  <h2 class="text-2xl font-bold text-gray-800 mb-4 border-b pb-2">Ingredientes</h2>
+  <!-- ... (ingredientes del pulpo) ... -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <!-- Grupo 1 -->
+    <div>
+      <h3 class="font-semibold text-gray-700 mb-3 flex items-center">
+        <svg class="w-5 h-5 mr-2 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+        </svg>
+        Principal
+      </h3>
+      <ul class="space-y-2 pl-2">
+        <li class="flex items-start">
+          <span class="mr-2 text-teal-500">•</span>
+          <span>1 <strong>pulpo fresco</strong> (1.5-2 kg)</span>
+        </li>
+        <li class="flex items-start">
+          <span class="mr-2 text-teal-500">•</span>
+          <span>4 <strong>patatas</strong> medianas (cachelos)</span>
+        </li>
+      </ul>
+    </div>
+    
+    <!-- Grupo 2 -->
+    <div>
+      <h3 class="font-semibold text-gray-700 mb-3 flex items-center">
+        <svg class="w-5 h-5 mr-2 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+        </svg>
+        Acompañamiento
+      </h3>
+      <ul class="space-y-2 pl-2">
+        <li class="flex items-start">
+          <span class="mr-2 text-teal-500">•</span>
+          <span>2 cucharadas de <strong>pimentón dulce</strong> de La Vera</span>
+        </li>
+        <li class="flex items-start">
+          <span class="mr-2 text-teal-500">•</span>
+          <span><strong>Aceite de oliva</strong> virgen extra</span>
+        </li>
+        <li class="flex items-start">
+          <span class="mr-2 text-teal-500">•</span>
+          <span><strong>Sal gruesa</strong> marina</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN PREPARACIÓN -->
+<section class="mb-16">
+  <h2 class="text-2xl font-bold text-gray-800 mb-6 border-b pb-2">Preparación</h2>
+  <!-- ... (pasos del pulpo) ... -->
+  <div class="flex flex-col md:flex-row gap-6 mb-8">
+    <div class="md:w-1/4 flex-shrink-0">
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-teal-500 text-white font-bold text-lg">1</span>
+    </div>
+    <div class="md:w-3/4">
+      <h3 class="text-xl font-semibold text-gray-800 mb-3">Cocción "asustada"</h3>
+      <div class="prose prose-sm text-gray-600">
+        <p><strong>Tiempo:</strong> 40-50 min</p>
+        <ul class="list-disc pl-5 mt-2 space-y-1">
+          <li>Hierve agua en una olla grande <strong>sin sal</strong>.</li>
+          <li><strong>Técnica gallega:</strong> Sumerge el pulpo 3 veces (5 segundos cada una) antes de soltarlo definitivamente.</li>
+          <li>Cuece a fuego medio. Cuando el agua vuelva a hervir, cuenta 35-40 minutos.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col md:flex-row gap-6 mb-8">
+    <div class="md:w-1/4 flex-shrink-0">
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-teal-500 text-white font-bold text-lg">2</span>
+    </div>
+    <div class="md:w-3/4">
+      <h3 class="text-xl font-semibold text-gray-800 mb-3">Corte y presentación</h3>
+      <div class="prose prose-sm text-gray-600">
+        <p><strong>Tiempo:</strong> 10 min</p>
+        <ul class="list-disc pl-5 mt-2 space-y-1">
+          <li>Escurre el pulpo y corta las patas en rodajas de 1 cm <strong>con tijeras</strong>.</li>
+          <li>Sirve en madera con patatas cocidas ("cachelos").</li>
+          <li>Aliña con aceite de oliva, pimentón dulce y sal gruesa.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Título -->
+<h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">Pitu de Caleya</h1>
+
+<!-- Rating y tiempo -->
+<div class="flex items-center gap-4 mb-6">
+  <div class="flex text-amber-400 text-xl">★★★★☆</div>
+  <span class="text-gray-500">⏱ 1h 45min</span>
+</div>
+
+<!-- Imagen destacada -->
+<div class="rounded-xl overflow-hidden shadow-lg mb-8">
+  <img src="./assets/images/pitu.png" alt="Pitu de caleya con salsa asturiana" 
+       class="w-full h-64 md:h-96 object-cover hover:scale-105 transition-transform duration-300">
+</div>
+
+<!-- SECCIÓN INGREDIENTES -->
+<section class="mb-12">
+  <h2 class="text-2xl font-bold text-gray-800 mb-4 border-b pb-2">Ingredientes</h2>
+  <!-- ... (ingredientes del pitu) ... -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <!-- Grupo 1: Base del guiso -->
+    <div>
+      <h3 class="font-semibold text-gray-700 mb-3 flex items-center">
+        <svg class="w-5 h-5 mr-2 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+        </svg>
+        Principal
+      </h3>
+      <ul class="space-y-2 pl-2">
+        <li class="flex items-start">
+          <span class="mr-2 text-teal-500">•</span>
+          <span>1 <strong>pollo campero</strong> troceado (1.5 kg)</span>
+        </li>
+        <li class="flex items-start">
+          <span class="mr-2 text-teal-500">•</span>
+          <span>2 <strong>cebollas</strong> grandes</span>
+        </li>
+        <li class="flex items-start">
+          <span class="mr-2 text-teal-500">•</span>
+          <span>4 <strong>dientes de ajo</strong></span>
+        </li>
+      </ul>
+    </div>
+    
+    <!-- Grupo 2: Aromáticos y líquidos -->
+    <div>
+      <h3 class="font-semibold text-gray-700 mb-3 flex items-center">
+        <svg class="w-5 h-5 mr-2 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+        </svg>
+        Acompañamiento
+      </h3>
+      <ul class="space-y-2 pl-2">
+        <li class="flex items-start">
+          <span class="mr-2 text-teal-500">•</span>
+          <span>1 vaso de <strong>vino blanco</strong> (sidra también vale)</span>
+        </li>
+        <li class="flex items-start">
+          <span class="mr-2 text-teal-500">•</span>
+          <span>1 cucharada de <strong>pimentón dulce</strong></span>
+        </li>
+        <li class="flex items-start">
+          <span class="mr-2 text-teal-500">•</span>
+          <span><strong>Aceite de oliva</strong>, sal y laurel</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN PREPARACIÓN -->
+<section class="mb-16">
+  <h2 class="text-2xl font-bold text-gray-800 mb-6 border-b pb-2">Preparación</h2>
+  <!-- ... (pasos del pitu) ... -->
+   <!-- Paso 1: Sofrito -->
+  <div class="flex flex-col md:flex-row gap-6 mb-8">
+    <div class="md:w-1/4 flex-shrink-0">
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-teal-500 text-white font-bold text-lg">1</span>
+    </div>
+    <div class="md:w-3/4">
+      <h3 class="text-xl font-semibold text-gray-800 mb-3">Sofrito base</h3>
+      <div class="prose prose-sm text-gray-600">
+        <p><strong>Tiempo:</strong> 10 min</p>
+        <ul class="list-disc pl-5 mt-2 space-y-1">
+          <li>En una cazuela, dora los ajos y cebollas picados en <strong>aceite de oliva</strong>.</li>
+          <li>Añade el <strong>pimentón</strong> y remueve rápido para que no se queme.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Paso 2: Cocción -->
+  <div class="flex flex-col md:flex-row gap-6 mb-8">
+    <div class="md:w-1/4 flex-shrink-0">
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-teal-500 text-white font-bold text-lg">2</span>
+    </div>
+    <div class="md:w-3/4">
+      <h3 class="text-xl font-semibold text-gray-800 mb-3">Guisar el pollo</h3>
+      <div class="prose prose-sm text-gray-600">
+        <p><strong>Tiempo:</strong> 45 min</p>
+        <ul class="list-disc pl-5 mt-2 space-y-1">
+          <li>Incorpora los trozos de pollo y dóralos por todos lados.</li>
+          <li>Vierte el <strong>vino blanco o sidra</strong> y deja reducir 5 minutos.</li>
+          <li>Añade agua hasta cubrir, una hoja de laurel y cocina a fuego lento 40 minutos.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Paso 3: Acabado -->
+  <div class="flex flex-col md:flex-row gap-6">
+    <div class="md:w-1/4 flex-shrink-0">
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-teal-500 text-white font-bold text-lg">3</span>
+    </div>
+    <div class="md:w-3/4">
+      <h3 class="text-xl font-semibold text-gray-800 mb-3">Toque final</h3>
+      <div class="prose prose-sm text-gray-600">
+        <p><strong>Tradición asturiana:</strong></p>
+        <ul class="list-disc pl-5 mt-2 space-y-1">
+          <li>Rectifica de sal y espolvorea perejil fresco al servir.</li>
+          <li>Se suele acompañar con <strong>patatas cocidas</strong> o pan rústico.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+        </main>
+      
+        <div id="footer"></div>
+        
+        <script src="./js/load-components.js"></script>
+      </body>
+</html>

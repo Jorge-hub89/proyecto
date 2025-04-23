@@ -1,0 +1,61 @@
+<header class="bg-black text-white mx-auto max-w-[97vw] rounded-lg">
+    <div
+      class="container mx-auto px-4 sm:px-6 h-30 flex items-center justify-between">
+
+      <!-- Botón Hamburguesa (ID CORRECTO) -->
+    <button id="menu-btn" class="lg:hidden text-white focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+
+      <!-- Contenedor Logo + Enlaces -->
+      <div class="flex items-center flex-1 lg:flex-none lg:gap-8">
+        <!-- Logo con tamaño fijo grande -->
+        <img src="./assets/images/logo.png" alt="Logo" class="h-20 lg:h-35">
+
+        <!-- botones y enlaces -->
+        <nav class="hidden lg:flex gap-3">
+          <a href="/src/index.html"
+            class="bg-gray-700 hover:bg-gray-600 text-white px-5 py-2 rounded-full text-sm min-w-[110px] text-center">INICIO</a>
+          <a href="#"
+            class="bg-gray-700 hover:bg-gray-600 text-white px-5 py-2 rounded-full text-sm min-w-[110px] text-center">DESTACADOS</a>
+          <a href="/src/recetas.html"
+            class="bg-gray-700 hover:bg-gray-600 text-white px-5 py-2 rounded-full text-sm min-w-[110px] text-center">RECETAS</a>
+          <a href="/src/perfil.html"
+            class="bg-gray-700 hover:bg-gray-600 text-white px-5 py-2 rounded-full text-sm min-w-[110px] text-center">PERFIL</a>
+          <a href="#"
+            class="bg-gray-700 hover:bg-gray-600 text-white px-5 py-2 rounded-full text-sm min-w-[110px] text-center">CONTACTO</a>
+        </nav>
+      </div>
+
+      <!-- Contenedor  -->
+      <div class="flex items-center">
+        <!-- Botón Registrarse -->
+        <a href="#"
+          class="bg-teal-500 hover:bg-teal-400 text-black px-5 py-2 rounded-full text-sm sm:text-base mr-4">
+          Registrarse
+        </a>
+        <!-- Icono Login -->
+        <a href="/src/log.html" class="text-white hover:text-orange-400">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="2"
+              d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+          </svg>
+        </a>
+      </div>
+  <!-- Menú Móvil (FUERA del div container) -->
+  <div id="mobile-menu" class="hidden lg:hidden bg-black w-full absolute left-0 z-50 mt-2 py-4">
+    <div class="container mx-auto px-4">
+      <div class="flex flex-col space-y-3">
+        <a href="/src/index.html" class="block bg-gray-800 hover:bg-gray-700 text-white px-5 py-3 rounded-full text-center">INICIO</a>
+        <a href="#" class="block bg-gray-800 hover:bg-gray-700 text-white px-5 py-3 rounded-full text-center">DESTACADOS</a>
+        <a href="/src/recetas.html" class="block bg-gray-800 hover:bg-gray-700 text-white px-5 py-3 rounded-full text-center">RECETAS</a>
+        <a href="/src/perfil.html" class="block bg-gray-800 hover:bg-gray-700 text-white px-5 py-3 rounded-full text-center">PERFIL</a>
+        <a href="#" class="block bg-gray-800 hover:bg-gray-700 text-white px-5 py-3 rounded-full text-center">CONTACTO</a>
+      </div>
+    </div>
+  </div>
+    </header>
